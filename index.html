@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>ZIXXI Coming Soon</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&family=Poppins:wght@600;800&display=swap">
@@ -17,11 +19,11 @@
 body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.6;
   padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
   background-image:radial-gradient(60rem 30rem at 85% -5%,var(--glow1),transparent 60%),radial-gradient(50rem 28rem at -10% 40%,var(--glow2),transparent 60%);background-repeat:no-repeat}
-.wrap{max-width:1120px;margin:0 auto;display:grid;gap:40px}
+.wrap{max-width:1240px;margin:0 auto;display:grid;gap:40px}
 header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;text-decoration:none}
 .logo{height:46px;width:auto;display:block}
-.hero{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.hero>*{min-width:0}.hero h1{font-size:clamp(44px,5.8vw,86px)}.hero .lede{margin-top:22px;max-width:30ch}.hero .hall{aspect-ratio:5/4.7}@media (max-width:900px){.hero{grid-template-columns:1fr}.hero .hall{aspect-ratio:4/4.4}.hero .lede{max-width:none}}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.hero>*{min-width:0}.hero h1{font-size:clamp(44px,5.8vw,86px)}.hero .lede{margin-top:22px;max-width:30ch}.hero .hall{aspect-ratio:5/4}@media (max-width:900px){.hero{grid-template-columns:1fr}.hero .hall{aspect-ratio:4/4.4}.hero .lede{max-width:none}}
 .ribbon{display:inline-block;margin:0 0 22px;filter:drop-shadow(0 10px 16px rgba(224,115,0,.4))}
 .ribbon span{position:relative;display:inline-flex;align-items:center;gap:14px;padding:13px 46px 13px 42px;overflow:hidden;font:800 clamp(16px,2.4vw,21px)/1 Poppins,var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#1b1100;background:linear-gradient(100deg,#e07300,#ffa84d 50%,#e07300);clip-path:polygon(0 0,100% 0,calc(100% - 20px) 50%,100% 100%,0 100%,20px 50%)}
 .ribbon span::before{content:"";width:11px;height:11px;border-radius:50%;background:#1b1100;box-shadow:0 0 0 0 rgba(27,17,0,.6);animation:blip 1.8s ease-out infinite}
@@ -119,7 +121,7 @@ h1 span{color:var(--orange)}
     mx+=(tmx-mx)*.06;my+=(tmy-my)*.06;
     var g=css('--green'),o=css('--orange'),ink=css('--ink'),floor=css('--floor'),floor2=css('--floor2'),line=css('--line'),card=css('--card'),fg=css('--fg'),muted=css('--muted');
     x.clearRect(0,0,W,H);x.globalAlpha=GA;
-    tw=Math.max(24,Math.min(W*.9/N,(H-46-110)*2/N));th=tw/2;u=tw/52;cx=W/2;cy=H-50-N*th;
+    tw=Math.max(24,Math.min(W*.9/N,(H-46-110)*2/N));th=tw/2;u=tw/52;cx=W/2;var topX=100*u;cy=Math.max(topX+8,(H-84-(N*th+topX))/2+topX);
     // blueprint dots
     x.fillStyle=line;for(var bx=14;bx<W;bx+=28)for(var by=14;by<H;by+=28)x.fillRect(bx,by,1.5,1.5);
     // aisle floor
@@ -246,3 +248,5 @@ h1 span{color:var(--orange)}
   rb.addEventListener('click',burst);
 })();
 </script>
+
+</html>
